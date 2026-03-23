@@ -23,7 +23,7 @@ function timingSafeEqual(a, b) {
 async function sendConfirmationEmail({ name, email, amount, paymentId, orderId, phone, state, domain }) {
   const GMAIL_USER = process.env.GMAIL_USER;
   const GMAIL_PASS = process.env.GMAIL_PASS;
-  const ADMIN_EMAILS = (process.env.ADMIN_EMAILS || 'accenlearn@gmail.com,lokesh@accenlearn.com').split(',');
+  const ADMIN_EMAILS = (process.env.ADMIN_EMAILS || 'admin@example.com').split(',');
 
   if (!GMAIL_USER || !GMAIL_PASS) {
     console.warn('Email credentials missing, skipping email');

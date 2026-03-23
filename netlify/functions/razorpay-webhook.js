@@ -78,7 +78,7 @@ exports.handler = async (event) => {
     return json(500, { success: false, message: 'Email service not configured.' });
   }
 
-  const ADMIN_EMAILS = (process.env.ADMIN_EMAILS || 'accenlearn@gmail.com,lokesh@accenlearn.com')
+  const ADMIN_EMAILS = (process.env.ADMIN_EMAILS || 'admin@example.com')
     .split(',')
     .map((e) => e.trim())
     .filter(Boolean);

@@ -99,7 +99,7 @@ exports.handler = async (event) => {
     });
   }
 
-  const ADMIN_EMAILS = (process.env.ADMIN_EMAILS || 'accenlearn@gmail.com,lokesh@accenlearn.com')
+  const ADMIN_EMAILS = (process.env.ADMIN_EMAILS || 'admin@example.com')
     .split(',')
     .map((e) => e.trim())
     .filter(Boolean);

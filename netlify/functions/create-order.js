@@ -43,7 +43,7 @@ exports.handler = async (event) => {
     return json(400, { success: false, message: 'Missing required payer details.' });
   }
 
-  const amountPaise = (Number(payload.amount) || 2000) * 100;
+  const amountPaise = (Number(payload.amount) || 3000) * 100;
 
   const razorpay = new Razorpay({
     key_id: keyId,
@@ -62,7 +62,7 @@ exports.handler = async (event) => {
         phone,
         state,
         domain,
-        program: 'SKILL ACCELERATOR KIT'
+        program: 'CAREER LAUNCHPAD KIT'
       }
     });
   } catch (err) {
